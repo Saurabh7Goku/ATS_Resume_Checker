@@ -90,7 +90,7 @@ sus = c2.button('Improve Experience content writing...')
 
 special_prompt = """
  You are an experienced Technical Human Resource Manager, your task is to review the provided resume against the job description.
- Please edit and write down the candidate's experience and make it more impact full.
+ Please edit and write down the all candidate's experience and make it more impact full.
  .
 """
 
