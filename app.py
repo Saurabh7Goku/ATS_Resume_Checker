@@ -1,18 +1,16 @@
 from dotenv import load_dotenv
-
-load_dotenv()
-
 import streamlit as st
 import os
 from PIL import Image
 import io
 import pdf2image
 import base64
-
 import google.generativeai as genai
 
-os.getenv("API_KEY")
-genai.configure(api_key=os.getenv("API_KEY"))
+
+load_dotenv() ## load all our environment variables
+
+genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 def response(input, pdf, prompt):
     model = genai.GenerativeModel('gemini-pro-vision')
@@ -82,13 +80,20 @@ submit3 = col4.button("Missing Keywords")
 submit4 = col5.button("Percentage match")
 
 c1, c2, c3 = st.columns(3)
-sus = c2.button('Improve Experience/Project content writing...')
+sus = c2.button('Improve Experience content writing...')
+
+# special_prompt = """
+#  You are an experienced Technical Human Resource Manager,your task is to review the provided resume against the job description.
+#  please Check all the spelling mistakes and suggest more impactful way to write Candidate's experience and using action verbs and more impactful,
+#  way to write project descriptions.
+# """
 
 special_prompt = """
- You are an experienced Technical Human Resource Manager,your task is to review the provided resume against the job description.
- please Check all the spelling mistakes and suggest more impactful way to write Candidate's experience and using action verbs and more impactful,
- way to write project descriptions.
+ You are an experienced Technical Human Resource Manager, your task is to review the provided resume against the job description.
+ Please edit and write down the candidate's experience and make it more impact full.
+ .
 """
+
 
 input_prompt1 = """
  You are an experienced Technical Human Resource Manager,your task is to review the provided resume against the job description. 
