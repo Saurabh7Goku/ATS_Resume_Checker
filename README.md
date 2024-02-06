@@ -33,6 +33,13 @@ The tool goes beyond analysis by offering suggestions to enhance the way you pre
 4. Click the "Submit" button to initiate the analysis.
 5. Review the results and follow the suggestions to improve your resume.
 
+## Sample Image of Application.
+![snap1](https://github.com/Saurabh7Goku/ATS_Resume_Checker/assets/73352093/cb1f9068-7abc-41fc-af97-6d04e91c3b81)
+
+## Sample with Response
+![sanp2](https://github.com/Saurabh7Goku/ATS_Resume_Checker/assets/73352093/cf613b9c-5138-4c0f-b578-f316d71495b9)
+
+
 ## Contributing
 
 We welcome contributions to enhance the functionality and usability of the ATS Resume Checker. Feel free to fork the repository, make improvements, and submit a pull request.
