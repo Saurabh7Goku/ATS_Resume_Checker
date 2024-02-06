@@ -3,3 +3,4 @@ google-generativeai
 python-dotenv
 pdf2image
 pymupdf
+PyPDF2==3.0.1
