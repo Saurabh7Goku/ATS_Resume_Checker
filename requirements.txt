@@ -3,3 +3,4 @@ google-generativeai
 python-dotenv
 pdf2image
 pymupdf == 1.23.21
+poppler-utils
